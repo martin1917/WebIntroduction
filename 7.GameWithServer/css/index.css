@@ -1,0 +1,188 @@
+:root {
+    font-size: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+input {
+    font-size: 18px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0 auto;
+    width: 800px;
+    height: 700px;
+}
+
+/*Верхняя часть*/
+.wrapper__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 5px;
+    align-items: center;
+}
+
+/*имя + счет*/
+span#name {
+    text-decoration: underline;
+}
+.score {
+    /* color: green; */
+    text-decoration: underline;
+}
+
+/*таймер и кнопка старт*/
+.begin {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    text-align: center;
+}
+input[type="number"] {
+    text-align: center;
+    width: 30%;
+}
+.start input {
+    width: 50%;
+}
+
+/*кнопка выхода*/
+.logout {
+    color: red;
+    text-decoration: underline;
+    transition: transform 0.1s;
+    font-size: 1.1rem;
+}
+.logout:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*центральная часть - сама игра*/
+.wrapper__body {
+    background: repeating-linear-gradient(
+            -60deg,
+            #555 0,
+            #555 1px,
+            transparent 2px,
+            transparent 50px
+        ),
+        repeating-linear-gradient(
+            60deg,
+            #555 0,
+            #555 1px,
+            transparent 2px,
+            transparent 50px
+        );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 0px 5px 20px 5px;
+    user-select: none;
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+}
+
+/*сообщение для юзера*/
+.message {
+    position: absolute;
+    display: none;
+    color: red;
+    font-size: 0.8rem;
+    left: 50%;
+    top: 35%;
+}
+
+/*задание*/
+.exercise {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 20px;
+}
+.exercise > div {
+    border: 1px dotted black;
+}
+.exercise .task {
+    min-width: 140px;
+    padding: 5px;
+}
+.exercise .answer {
+    width: calc(10% - 5px);
+}
+
+/*кнопки*/
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50%;
+}
+.btn {
+    width: calc(20% - 5px);
+    padding: 5px;
+    border: 1px solid black;
+    cursor: move;
+}
+
+/*нижняя часть - таблицы с результатами*/
+.wrapper__footer {
+    border: 1px solid black;
+    overflow-y: auto;
+}
+
+.tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.table {
+    width: 45%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.ready {
+    background: white;
+}
+
+.active {
+    background: rgb(184, 179, 179);
+}
+
+.hide {
+    background: white;
+    border: 1px solid white;
+    color: rgb(13, 95, 13);
+}
+
+.message-score {
+    text-align: center;
+    color: rgb(10, 106, 161);
+    font-style: italic;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,92 @@
+<!--Лёвин максим
+20Вп1
+15-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="./scripts/TYPE.js" defer></script>
+    <script src="./scripts/Exercise.js" defer></script>
+    <script src="./scripts/Test.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <title>Test (4 laba)</title>
+</head>
+<body>
+    <div class="title">
+        <p>
+            Предмет: «Основы безопасности жизнедеятельности» <br>
+            Тема: «Меры пожарной безопасности»
+        </p>
+    </div>
+
+    <div class="main start">
+        <div>TIMER</div>
+        <div class="timer">
+            <div class="timer_block f">
+                <div class="timer_block_first">01</div>
+                <div class="timer_block_second">
+                    <div class="changeTime up">&#9650;</div>
+                    <div class="changeTime down">&#9660;</div>
+                </div>
+            </div>
+            <div class="timer_block s">
+                <div class="timer_block_first">56</div>
+                <div class="timer_block_second">
+                    <div class="changeTime up">&#9650;</div>
+                    <div class="changeTime down">&#9660;</div>
+                </div>
+            </div>
+        </div>
+        <div id="btnStart">START</div>
+    </div>
+
+    <div class="main test">
+        <div class="header">
+            <div class="header_body">
+                <div id="time">12:15:14</div>
+                <input id="finish" type="button" value="Finish">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content_body">
+                <div class="content_body_exercise">
+                    <div id="question"></div>
+                    <div id="answer"></div>
+                </div>
+                <div class="content_body_numExercise">
+                    <div class="list"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <div class="navigation_body">
+                <div class="btns">≪</div>
+                <div class="btns">&#8592;</div>
+                <!--<input id="save" type="button" value="Save"></input>-->
+                <div class="btns">&#8594;</div>
+                <div class="btns">≫</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="info"></div>
+        <div class="result">
+            <table id="table">
+                <tr>
+                    <th>№</th>
+                    <th>Введенный ответ</th>
+                    <th>Правильный ответ</th>
+                    <th>Балл</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

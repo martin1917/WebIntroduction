@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+}
+input:not([type="submit"]):focus {
+    border: 4px solid greenyellow;
+}
+
+input[type="submit"] {
+    width: 100%;
+    font-size: 1rem;
+}
+
+body {
+    height: 98vh;
+}
+
+.wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 470px;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    font-size: 1.2rem;
+    max-width: 470px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/*Название формы [Sign up]*/
+.header {
+    text-align: center;
+    font-size: 1.7rem;
+    font-style: italic;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.field {
+    border-bottom: 2px dotted #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*блок с input --> [ login |______| ]*/
+.field > div:first-child {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+/*контент блока с input по центру*/
+.field > div:first-child > div {
+    text-align: center;
+    align-self: center;
+}
+
+/*Название input  [login / Name / ...]*/
+.field > div:first-child > div:first-child {
+    width: 30%;
+}
+
+/*input [ |______| ]*/
+.field > div:first-child > div:last-child {
+    width: 65%;
+}
+
+/*поле для ошибок*/
+.error {
+    display: none;
+    font-size: 0.9rem;
+    text-align: center;
+    color: red;
+    margin: 10px 0px 10px 0px;
+}
+
+/*редирект на login*/
+.wrapper > div:last-child {
+    text-align: center;
+}

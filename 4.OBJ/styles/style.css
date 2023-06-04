@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    /* user-select: none; */
+}
+input[type="button"] {
+    font-size: 25px;
+}
+/*----------Заголовок---------------------------------------------------*/
+.title {
+    font-size: 30px;
+    text-align: center;
+}
+/*----------Блок с настройкой таймера(начало)---------------------------*/
+.main.start {
+    background: rgb(239, 228, 176);
+    font-family: "Unispace";
+    font-style: italic;
+}
+.main.start > div:first-child {
+    margin-top: 50px;
+    font-size: 48px;
+}
+
+.timer {
+    width: 250px;
+    height: 90px;
+    border: 2px solid black;
+    background: rgb(153, 217, 234);
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+}
+.timer_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.timer_block:first-child {
+    border-right: 2px solid black;
+}
+.timer_block_first {
+    width: 80%;
+    height: 100%;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.timer_block_second {
+    width: 20%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.changeTime {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.changeTime:first-child {
+    border-bottom: 1px solid black;
+}
+.changeTime:hover {
+    cursor: pointer;
+    background: rgb(255, 201, 14);
+}
+#btnStart {
+    font-size: 48px;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: rgb(181, 230, 29);
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 26px;
+    letter-spacing: 10px;
+}
+#btnStart:hover {
+    cursor: pointer;
+    background: rgb(34, 177, 76);
+}
+/*------------Блок с тестом(основной контент)---------------------------*/
+.main {
+    user-select: none;
+    max-width: 1000px;
+    min-height: 500px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+.main.test {
+    display: none;
+}
+/*-----------Верхняя часть основного контента---------------------------*/
+.header {
+    min-height: 50px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.header_body {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*----------Средняя часть основного контента(вопросы, ответы)-----------*/
+.content {
+    min-height: 400px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.content_body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content_body_exercise {
+    height: 85%;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.content_body_exercise > div {
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0;
+}
+.content_body_exercise > div:first-child {
+    border-right: 2px solid black;
+}
+#answer > * {
+    font-size: 25px;
+    width: 90%;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.content_body_numExercise {
+    border-top: 2px solid black;
+    height: 15%;
+}
+.content_body_numExercise .list {
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+.list > div:first-child {
+    margin-left: 10px;
+}
+.list > div:last-child {
+    margin-right: 10px;
+}
+/*--------Нижняя часть основного контента(навигация по тесту)-----------*/
+.navigation {
+    min-height: 60px;
+    position: relative;
+}
+
+.navigation_body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btns {
+    border-radius: 50%;
+    min-width: 35px;
+    min-height: 35px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    user-select: none;
+}
+.navigation_body .btns {
+    min-width: 45px;
+    min-height: 45px;
+}
+.btns:hover {
+    cursor: pointer;
+    background: rgb(125, 244, 255);
+}
+.btns.active {
+    background: rgb(114, 113, 113);
+}
+.btns.save {
+    background: rgb(0, 255, 128);
+}
+.btns.saveAndActive {
+    background: rgb(22, 116, 50);
+}
+
+#save {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+#finish {
+    cursor: pointer;
+}
+/*-------------------Блок с результатами--------------------------------*/
+.box {
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 800px;
+    width: 700px;
+    font-size: 30px;
+    position: relative;
+    display: none;
+}
+
+.info {
+    height: 7%;
+    width: 100%;
+    text-align: center;
+}
+.result {
+    position: absolute;
+    overflow-y: auto;
+    height: 93%;
+    width: 100%;
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#table th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.correct {
+    background: green;
+}
+.fail {
+    background: rgb(242, 94, 101);
+}

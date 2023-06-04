@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+/*-------------------Оболочка-------------------------------*/
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+/*------------------верхняя часть документа-----------------*/
+.header{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid green;
+}
+.header > div:first-child{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+/*--------------------Контейнер-----------------------------*/
+.container{    
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+.container>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container .left{
+    flex-grow: 1;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+.container .right{
+    flex-grow: 3;
+}
+/*-------------верх левого и правого блока контейнера-------*/
+.textInfo{
+    font-size: 20px;
+    height: 10%;
+    font-weight: bold;
+    font-style: italic;
+}
+/*------------------правый блок контейнера------------------*/
+.right .Data{
+    max-height: 80%;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+#records{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 25px;
+    width: 250px;
+}
+#records td, th{
+    border: 1px solid black;
+    width: 45%;
+    text-align: center;
+}
+#records th:first-child{
+    width: 10%;
+}
+#records td:first-child{
+    width: 10%;
+}
+/*--------------------левый блок контейнера-----------------*/
+.left .box{
+    width: 250px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.boxRow1{
+    height: 25%;
+}
+.boxRow2{
+    height: 50%;
+    margin-bottom: 10px;
+}
+.boxRow3{
+    height: 25%;
+}
+
+.boxRow1>div{
+    display: inline-block;
+    background-color:pink;
+    height: 100%;
+    font-size: 25px;
+    border: 1px solid black;
+    text-align: center;
+}
+#firstField{
+    width: 40%;
+}
+#change{
+    width: 20%;
+    margin-left: -4px;
+}
+#change:hover{
+    cursor: pointer;
+}
+#secondField{
+    width: 40%;
+    margin-left: -4px;
+}
+
+.boxRow2>div{
+    height: 50%;    
+    margin: 5px 0px 5px 0px;
+}
+input{
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+}
+
+#warning{
+    margin-top: 30px;
+}

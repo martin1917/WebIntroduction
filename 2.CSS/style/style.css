@@ -1,0 +1,49 @@
+body{
+    background-image: url(../img/Paper.png);
+    background-repeat: repeat; 
+}
+
+img{
+    height: 300px;
+}
+
+hr{
+    border: 0;
+    height: 4px;
+    background: #A0522D;
+}
+
+.top{
+    font-size: 60px;
+    font-family: Arial;
+    font-style: italic;
+    color: blue;
+    text-align: right;
+}
+
+.center{
+    font-size: 25px;
+    font-family: 'Times New Roman'
+}
+
+body:last-child{
+    font-size: 25px;
+    font-family: Calibri;
+}
+
+#queen{
+    color: red;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#roc{
+    color: green;
+    font-size: 30px;
+    text-decoration: overline;
+}
+
+#cult{
+    color: orange;
+    font-style: italic;
+}

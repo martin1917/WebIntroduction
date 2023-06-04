@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    
+}
+.info{
+    width: 850px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+.box {
+    margin: 0 auto;
+    border: 2px solid black;
+    /*background: rgb(241, 203, 96);*/
+    width: 1000px;
+    height: 800px;
+    position: relative;
+}
+
+.element {
+    position: absolute;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.result_box {
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+

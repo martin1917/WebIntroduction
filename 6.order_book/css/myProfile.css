@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    font-size: 23px;
+}
+.wrapper {
+}
+.box {
+    min-width: 900px;
+    min-height: 500px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 5px;
+    column-gap: 5px;
+    margin-top: 10px;
+}
+.myInfo {
+    padding: 5px;
+    border-radius: 10px;
+    background: pink;
+    width: 30%;
+}
+.myInfo > div {
+    margin-bottom: 10px;
+}
+.myInfo > div > div:last-child {
+    word-break: break-all;
+}
+
+.back {
+    display: inline;
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+    transition: all 0.1s;
+}
+.back:hover {
+    font-size: 1.05rem;
+}
+
+.name {
+    word-break: break-all;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.myOrders {
+    padding: 5px;
+    border-radius: 10px;
+    background: grey;
+    width: 70%;
+}
+.table {
+    height: 94%;
+    padding: 5px;
+    overflow-y: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    word-break: break-all;
+}

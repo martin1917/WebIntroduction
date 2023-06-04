@@ -1,0 +1,64 @@
+<!--
+    20ВП1
+    Максим Лёвин
+    #15
+-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Age converter  (3 laba)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link REL="stylesheet" TYPE="text/css" href="./styles/style.css">
+	<script src="./scripts/script.js" defer></script>
+    </head>
+	
+    <body>
+        <div class="wrapper">
+            <div class="header">  <!--Информация по заданию-->
+                <div>Конвертация возраста (Кот.год&harr;Человек.год)</div>
+                <div>(1 Кот.год = 7 Человек.год)</div>
+            </div>
+            
+            <div class="container">  <!--общий блок для ввода и таблицы-->
+                <div class="left">   <!--блок для ввода данных-->
+                    <div class="textInfo">Введите возраст для конвертации</div>
+
+                    <div class="box">
+                        <div class="boxRow1">
+                            <div id="firstField">Cat</div>
+                            <div id="change"><strong>&rarr;</strong></div>
+                            <div id="secondField">Human</div>
+                        </div>
+
+                        <div class="boxRow2">
+                            <div><input type="text" id="inputData"></div>
+                            <div><input type="text" disabled id="outputData"></div>
+                        </div>
+
+                        <div class="boxRow3">
+                            <input type="button" value="Convert" id="btm">
+                        </div>
+                    </div>
+
+                    <div id="warning"></div>
+                </div>
+            
+                <div class="right"> <!--блок для таблицы-->
+                    <div class="textInfo">Данные в виде таблицы</div>
+
+                    <div class="Data">
+                       <table id="records">
+                            <tr>
+                              <th class="num">№</th>
+                              <th>Cat</th>  
+                              <th>Human</th>
+                            </tr>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!--<hr>-->
+    </body>
+</html>

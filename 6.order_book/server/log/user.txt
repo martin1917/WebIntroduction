@@ -1,0 +1,4 @@
+{"login":"maksim","name":"\u043c\u0430\u043a\u0441\u0438\u043c","email":"sgd@fe.com","phone":"12345678910","pas":"123"}
+{"login":"martin","name":"\u041a\u0435\u0440\u0438\u043b\u043b","email":"sdfdsf@kf.ru","phone":"81234567891","pas":"123"}
+{"login":"maskim","name":"maskim","email":"maskim@mail.ru","phone":"+79867332528","pas":"123"}
+{"login":"admin","name":"\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440","email":"vladandpeace@mail.ru","phone":"+71234567891","pas":"123"}

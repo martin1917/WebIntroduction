@@ -1,0 +1,11 @@
+#container{
+    width: 500px;
+    height: 500px;
+    border: 0px dotted black;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+#clock{
+    font-size: 25px;
+}
